@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Spinner Wheel (Html Canvas)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top-div">
+      <!-- left -->
+      <div class="left-side">
+        <button class="spin-btn">Spin it!</button>
+        <canvas id="canvas" />
+      </div>
+      <!-- right -->
+      <div class="right-side">
+        <!-- textarea input -->
+        <div class="textarea-div">
+          <h2>Add Names</h2>
+          <textarea
+            id="data-input"
+            name="data-input"
+            rows="10"
+            cols="30"
+            spellcheck="false"
+          ></textarea>
+        </div>
+        <!-- winner button -->
+        <div class="winner-btn-container">
+          <div class="winner-btn">
+            <p class="winner-btn-text">"Rifat" is Winner!</p>
+            <i class="fa-regular fa-circle-xmark" id="close-btn"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./wheel.js"></script>
+    <script src="./app.js"></script>
+    <!-- <script src="./new.js"></script> -->
+  </body>
+</html>
